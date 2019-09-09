@@ -5,8 +5,9 @@ var plus = document.getElementById("plus");
 
 // Counter Minus
 minus.onclick = function () {
-    count -= 1;
-    if (count > -1) {
+
+    if (count > 0) {
+        count -= 1;
         result.innerHTML = count;
     } else {
         alert("can't minus");
