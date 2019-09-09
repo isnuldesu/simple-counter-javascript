@@ -6,61 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+  <link rel="stylesheet" href="./css/style.css">
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
     integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <title>Counter Js</title>
-
   <style>
-    body {
-      background-image: url('bg.png');
-    }
-
-    .container {
-      position: relative;
-      height: 100vh;
-    }
-
-    .card {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      border: none !important;
-      width: 20rem;
-    }
-
     @font-face {
       font-family: 'Brandon Grotesque Light';
       font-style: normal;
       font-weight: normal;
-      src: local('Brandon Grotesque Light'), url('fonts/Brandon_light.woff') format('woff');
+      src: local('Brandon Grotesque Light'), url('/fonts/Brandon_light.woff') format('woff');
     }
 
     @font-face {
       font-family: 'Brandon Grotesque Regular';
       font-style: normal;
       font-weight: normal;
-      src: local('Brandon Grotesque Regular'), url('fonts/Brandon_reg.woff') format('woff');
-    }
-
-    p {
-      font-family: 'Brandon Grotesque Light';
-      font-weight: normal;
-      font-size: 14px;
-    }
-
-    h1 {
-      font-family: 'Brandon Grotesque Regular';
-      font-weight: normal;
-      font-size: 32px
-    }
-
-    .btn-dark {
-      background-color: #e5dcd3 !important;
-      border-color: #fff !important;
+      src: local('Brandon Grotesque Regular'), url('/fonts/Brandon_reg.woff') format('woff');
     }
   </style>
 </head>
@@ -89,51 +55,7 @@
       </div>
     </div>
   </div>
-
-  <script>
-    var count = 0;
-    var minus = document.getElementById("minus");
-    var plus = document.getElementById("plus");
-
-    // Counter Minus
-    minus.onclick = function () {
-      count -= 1;
-      if (count > -1) {
-        result.innerHTML = count;
-      } else {
-        alert("can't minus");
-      }
-    };
-
-    // Counter Plus
-    plus.onclick = function () {
-      count += 1;
-      result.innerHTML = count;
-    };
-
-
-
-    // Alternative Way
-
-    // var count = 0;
-    // var plus = document.getElementById('plus');
-    // var minus = document.getElementById('minus');
-    // var result = document.getElementById('result');
-
-    // plus.addEventListener('click', function () {
-    //   count = count + 1;
-    //   result.innerHTML = count;
-    // });
-
-    // minus.addEventListener('click', function () {
-    //   count = count - 1;
-    //   if (count > -1) {
-    //     result.innerHTML = count;
-    //   } else {
-    //     alert('Gak bisa minus cuy');
-    //   }
-    // });
-  </script>
+  <script src="js/main.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js"
     integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous">
   </script>
